@@ -102,6 +102,12 @@ function ErrorList(props) {
     return null;
   }
 
+  const filteredErrors = errors.filter(elem => !!elem);
+
+  if (filteredErrors.length === 1) {
+    return <div className="ui error message">{filteredErrors[0]}</div>;
+  }
+
   return (
     <div>
       <ul className="error-detail bs-callout bs-callout-info">
