@@ -380,7 +380,6 @@ export default class Form extends Component {
         ref={form => {
           this.formElement = form;
         }}>
-        {this.renderErrors()}
         <_SchemaField
           schema={schema}
           uiSchema={uiSchema}
@@ -395,6 +394,7 @@ export default class Form extends Component {
           registry={registry}
           disabled={disabled}
         />
+        {this.renderErrors()}
         {children ? (
           children
         ) : (
