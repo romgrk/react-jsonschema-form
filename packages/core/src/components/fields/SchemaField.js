@@ -324,13 +324,13 @@ function SchemaFieldRender(props) {
     .trim();
 
   const fieldProps = {
-    description: (
+    description: description ? (
       <DescriptionField
         id={id + "__description"}
         description={description}
         formContext={formContext}
       />
-    ),
+    ) : null,
     rawDescription: description,
     help: <Help help={help} />,
     rawHelp: typeof help === "string" ? help : undefined,
