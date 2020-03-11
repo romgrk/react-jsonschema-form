@@ -9,6 +9,7 @@ function TextWidget({
   required,
   readonly,
   disabled,
+  name,
   label,
   value,
   onChange,
