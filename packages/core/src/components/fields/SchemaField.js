@@ -110,16 +110,14 @@ function ErrorList(props) {
 
   return (
     <div>
-      <ul className="error-detail bs-callout bs-callout-info">
-        {errors
-          .filter(elem => !!elem)
-          .map((error, index) => {
-            return (
-              <li className="text-danger" key={index}>
-                {error}
-              </li>
-            );
-          })}
+      <ul className="ui error message">
+        {filteredErrors.map((error, index) => {
+          return (
+            <li className="text-danger" key={index}>
+              {error}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
