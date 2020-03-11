@@ -1,9 +1,6 @@
 /* eslint-disable react/prop-types,react/destructuring-assignment */
 import React from "react";
-import {
-  isMultiSelect,
-  getDefaultRegistry,
-} from "react-jsonschema-form/lib/utils";
+import { isMultiSelect, getDefaultRegistry } from "../../../core/lib/utils";
 import { Button, Segment, Grid } from "semantic-ui-react";
 import AddButton from "../AddButton";
 
